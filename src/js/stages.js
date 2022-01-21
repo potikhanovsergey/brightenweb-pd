@@ -61,3 +61,8 @@ $('.stage-navigation__a').on('click', function(e) {
     inline: 'center',
   });
 });
+
+$('.stage-navigation__link').on('click', function() {
+  $('.stage-navigation__link').removeClass('m-active');
+  $(this).addClass('m-active');
+});

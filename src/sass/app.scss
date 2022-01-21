@@ -145,6 +145,18 @@ body {
 
 .questions {
   padding: 260px 0px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../img/stars-bg.png') center no-repeat;
+    z-index: -1;
+    background-size: cover;
+  }
 }
 
 .question {
@@ -167,6 +179,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   & h2 {
     font-family: Montserrat;
     font-style: normal;
