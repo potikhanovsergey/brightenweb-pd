@@ -17,6 +17,11 @@
   &__btn {
     color: #c378c9;
     background-color: white;
+    &:hover {
+      background-color: #95569a;
+      color: #fff;
+      border-color: #95569a;
+    }
   }
   &__inner {
     display: flex;

@@ -21,6 +21,11 @@
     margin: 93px auto;
     display: block;
     width: 294px;
+    &:hover {
+      background-color: #35769a;
+      color: #fff;
+      border-color: #35769a;
+    }
   }
   &__form {
     margin-top: 55px;

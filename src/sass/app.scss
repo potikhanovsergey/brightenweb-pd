@@ -152,12 +152,15 @@ body {
   color: white;
   max-width: 1300px;
   &__button {
-    margin: 0 auto;
+    margin: 90px auto 0;
     display: block;
-    margin-top: 90px;
     background-color: #fec859;
     border: none;
     color: black;
+    transition: 0.4s ease all;
+    &:hover {
+      background-color: #c59739;
+    }
   }
   background: url('../img/question-background.svg') center no-repeat;
   background-size: contain;

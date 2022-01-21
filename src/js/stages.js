@@ -51,3 +51,13 @@
 //     }, 800);
 //   }
 // }
+
+$('.stage-navigation__a').on('click', function(e) {
+  e.preventDefault();
+  let stageID = $(this).attr('href');
+  $(stageID)[0].scrollIntoView({
+    block: 'center',
+    behavior: 'smooth',
+    inline: 'center',
+  });
+});

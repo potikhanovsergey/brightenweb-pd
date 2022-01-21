@@ -5,7 +5,7 @@ var optionsBackground, bsBackground;
 
 optionsBackground = {
   points: 10,
-  inkAmount: 10,
+  inkAmount: 20,
   size: 300,
   frames: 10,
   frameAnimation: true,
