@@ -1,0 +1,56 @@
+.footer {
+  margin-top: 213px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  gap: 110px;
+  &__contact {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    position: relative;
+    margin-top: 35px;
+    padding-left: 35px;
+    &::before {
+      content: '';
+      width: 30px;
+      left: 0px;
+      background: no-repeat center;
+      height: 30px;
+      position: absolute;
+      background-size: contain;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__social-link {
+    margin-right: 36px;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 95.9%;
+    /* identical to box height, or 23px */
+
+    text-transform: uppercase;
+  }
+}
+
+.tel {
+  &::before {
+    background-image: url('../../img/tel.svg');
+  }
+}
+.mail {
+  &::before {
+    background-image: url('../../img/mail.svg');
+  }
+}

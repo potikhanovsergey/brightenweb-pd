@@ -1,0 +1,46 @@
+.offer {
+  background-image: url(../../img/offer/offer-bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% 100%;
+  padding-top: 300px;
+  padding-bottom: 110px;
+  margin-bottom: 200px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    text-align: left;
+    margin: 0;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+  &__btn {
+    align-self: center;
+  }
+  @media (max-width: 1023px) {
+    &__inner {
+      flex-direction: column;
+      padding-top: 220px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__right {
+      gap: 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+}

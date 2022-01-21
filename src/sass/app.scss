@@ -1,0 +1,253 @@
+@import '_fonts.scss';
+@import '_mixins';
+@import '_variables';
+@import '_desktop.scss';
+@import '_responsive';
+@import '_button.scss';
+
+body {
+  background-color: $black;
+  color: $white;
+  font-family: 'Montserrat';
+}
+
+.header {
+  &__inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-title {
+  padding-top: 40px;
+  height: 750px;
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  //background: url('../img/mainback.png') center no-repeat;
+  background-size: cover;
+  &__title {
+    font-family: 'GUERRILLA';
+    font-size: 144px;
+    position: relative;
+    z-index: 10;
+    max-width: 1150px;
+    color: white;
+    margin-bottom: 100px;
+    line-height: 136.66px;
+    text-align: center;
+  }
+}
+
+.main-canvas {
+  margin-top: 40px;
+}
+
+.logo {
+  font-family: 'GUERRILLA';
+  font-size: 36px;
+  color: $blue;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.title-section {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    z-index: 0;
+    width: 724px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  & h2 {
+    font-weight: 800;
+    font-size: 96px;
+    z-index: 10;
+    position: relative;
+    line-height: 117px;
+    text-transform: uppercase;
+    color: transparent;
+    z-index: 10;
+    -webkit-text-stroke: 2px white; /* width and color */
+    & span {
+      color: white;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+}
+
+.card {
+  //max-width: 436px;
+  min-height: 500px;
+  flex-grow: 1;
+  flex: 1;
+  background: no-repeat center;
+  flex-shrink: 1;
+  background-size: 100% 100%;
+  padding: 50px 70px 20px 70px;
+  color: white;
+  font-family: 'Montserrat';
+  &__desc {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__title {
+    //margin-bottom: 60px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+.positive-block {
+  padding-top: 150px;
+  &__title {
+    margin-bottom: 100px;
+    &::before {
+      background-image: url('../img/back-positive.svg');
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__card1 {
+    background-image: url('../img/card.png');
+  }
+  &__card2 {
+    background-image: url('../img/card2.png');
+  }
+  &__card3 {
+    background-image: url('../img/4.png');
+  }
+}
+
+.questions {
+  padding: 260px 0px;
+}
+
+.question {
+  margin: 0 auto;
+  color: white;
+  max-width: 1300px;
+  &__button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 90px;
+    background-color: #fec859;
+    border: none;
+    color: black;
+  }
+  background: url('../img/question-background.svg') center no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 117px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+  &.m-left {
+    text-align: left;
+  }
+  h2 {
+    position: relative;
+  }
+  &.m-no-paint {
+    h2 {
+      &:before {
+        background: none;
+      }
+    }
+  }
+}
+
+.br {
+  &__lg {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+
+.modal {
+  position: relative;
+  background-image: url('../img/modal-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__content {
+    padding: 110px 0 70px;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+  &__form {
+    max-width: 440px;
+    overflow: scroll;
+  }
+  @media (max-width: 767px) {
+    background-size: 135% 100%;
+    &__content {
+      padding: 110px 40px 0;
+    }
+  }
+}
+
+.close-modal {
+  top: 23px;
+  right: 160px;
+  position: fixed;
+  cursor: pointer;
+  @media (max-width: 767px) {
+    right: 20px;
+    top: 50px;
+    svg {
+      width: 25px;
+    }
+  }
+}
+
+@import 'components/tetris.scss';
+@import 'components/numbers.scss';
+@import 'components/offer_button.scss';
+@import 'components/offer.scss';
+
+@import 'components/title-underline.scss';
+@import 'components/comparison.scss';
+@import 'components/form-page.scss';
+@import 'components/form.scss';
+@import 'components/footer.scss';
+@import 'components/stages.scss';

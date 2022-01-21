@@ -1,0 +1,98 @@
+.stage-content {
+  //padding: 266px 0px;
+  background: no-repeat left top;
+  width: 680px;
+  min-height: 400px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+
+  background-position-y: -120px;
+  align-items: flex-end;
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    margin-right: 180px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 116.4%;
+    /* identical to box height, or 56px */
+
+    text-transform: uppercase;
+
+    color: #fec859;
+  }
+  &__desc {
+    margin-left: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+    margin-left: 30px;
+    width: 445px;
+  }
+}
+.stage {
+  margin-bottom: 93px;
+}
+.stages {
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+#stage1 .stage-content {
+  background-image: url('../../img/stages/number1.png');
+}
+
+#stage2 .stage-content {
+  background-image: url('../../img/stages/number2.png');
+}
+
+#stage3 .stage-content {
+  background-image: url('../../img/stages/number3.png');
+}
+
+#stage4 .stage-content {
+  background-image: url('../../img/stages/number4.png');
+}
+
+#stage5 .stage-content {
+  background-image: url('../../img/stages/number5.png');
+}
+
+#stage6 .stage-content {
+  background-image: url('../../img/stages/number6.png');
+}
+
+#stage7 .stage-content {
+  background-image: url('../../img/stages/number7.png');
+}
+
+.stage-navigation {
+  position: sticky;
+  top: 10%;
+
+  list-style: none;
+  &__link + &__link {
+    margin-top: 30px;
+  }
+  &__a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+      color: #fec859;
+      text-decoration: none;
+    }
+  }
+}

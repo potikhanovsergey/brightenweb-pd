@@ -1,0 +1,94 @@
+.numbers {
+  &-block {
+    margin-bottom: 100px;
+  }
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    flex-basis: 320px;
+  }
+  &__number {
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 90px;
+    position: relative;
+    height: 200px;
+    margin-bottom: 28px;
+  }
+  &__icon {
+    position: absolute;
+    top: -50px;
+    z-index: -2;
+    &.m-percent {
+      right: 40px;
+    }
+    &.m-cent {
+      right: 80px;
+    }
+    &.m-dollar {
+      right: 30px;
+    }
+  }
+  &__text {
+    text-align: center;
+    max-width: 220px;
+    font-size: 24px;
+  }
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding: 0 35px;
+    gap: 45px;
+    &__item {
+      display: flex;
+      flex-basis: 100%;
+      gap: 160px;
+      align-items: center;
+      margin-bottom: 0;
+      &:nth-child(2n) {
+        align-self: flex-end;
+        flex-direction: row-reverse;
+        gap: 30px;
+        .numbers__number {
+          margin-right: 100px;
+        }
+      }
+    }
+    &__number {
+      height: auto;
+      margin-bottom: 0;
+      font-size: 64px;
+    }
+    &__text {
+      text-align: left;
+      max-width: 140px;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    &__icon {
+      height: 133%;
+      width: auto;
+      top: -50px;
+      &.m-percent {
+        right: -75px;
+        top: -20px;
+      }
+      &.m-cent {
+        right: -60px;
+        top: -15px;
+      }
+      &.m-dollar {
+        right: -65px;
+        top: -20px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    &__item {
+      &:nth-child(2n) {
+        .numbers__number {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

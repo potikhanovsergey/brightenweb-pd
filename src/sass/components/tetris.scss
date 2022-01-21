@@ -1,0 +1,36 @@
+.tetris-block {
+  margin-bottom: 233px;
+}
+
+.tetris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__item {
+    background-image: url('../../img/tetris/tetris-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 58px 50px;
+    flex-basis: calc(32% - 15px);
+    min-height: 380px;
+    font-size: 24px;
+    &.m-big {
+      padding: 58px 100px;
+      background-image: url('../../img/tetris/tetris-bg-big.png');
+      flex-basis: calc(68% - 15px);
+    }
+  }
+  &__item-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 37px;
+  }
+  @media (max-width: 1140px) {
+    &__item,
+    &__item.m-big {
+      background-image: url('../../img/tetris/tetris-bg.png');
+      flex-basis: 100%;
+      padding: 58px 50px 58px 65px;
+    }
+  }
+}

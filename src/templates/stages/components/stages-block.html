@@ -1,0 +1,8 @@
+<div class="stages-block">
+  <each loop="item, index in stages">
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": {{item}}}'
+    ></include>
+  </each>
+</div>

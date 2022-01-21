@@ -1,0 +1,52 @@
+.form-component {
+  &__top {
+    color: white;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 95.9%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__desc {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-weight: normal;
+  }
+  &__btn {
+    background-color: white;
+    color: #5598be;
+    margin: 93px auto;
+    display: block;
+    width: 294px;
+  }
+  &__form {
+    margin-top: 55px;
+    & input {
+      display: block;
+      width: 100%;
+      margin-bottom: 65px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      border-bottom: 1px solid white;
+      &::-webkit-input-placeholder {
+        color: white;
+      }
+    }
+
+    & label {
+      color: white;
+    }
+    & textarea {
+      background: transparent;
+      border: 1px solid white;
+      width: 100%;
+      color: white;
+      outline: none;
+    }
+  }
+}

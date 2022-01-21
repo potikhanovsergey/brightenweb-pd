@@ -1,0 +1,13 @@
+.form-page {
+  &__wrapper {
+    background-image: url(../../img/form-page.png);
+    padding: 96px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  &__form {
+    max-width: 433px;
+    margin: 0 auto;
+  }
+}

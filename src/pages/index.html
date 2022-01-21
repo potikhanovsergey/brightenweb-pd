@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <include
+      src="src/templates/head.html"
+      locals='{"title": "Главная страница"}'
+    ></include>
+  </head>
+  <body>
+    <include src="src/templates/header.html"></include>
+    <main class="main">
+      <section class="main-title">
+        <h1 class="main-title__title">
+          WEB тоже может сиять
+        </h1>
+      </section>
+      <section class="positive-block">
+        <div class="container">
+          <include src="src/templates/title/positive-title.html"></include>
+          <div class="positive-block__cards">
+            <div class="card positive-block__card1">
+              <h5 class="card__title">Скорость</h5>
+              <p class="card__desc">
+                "Сколько времени вам нужно?"
+              </p>
+              <p class="card__desc">
+                Ровно столько, сколько вы готовы дать!
+              </p>
+              <p class="card__desc">
+                Ни больше, ни меньше.
+              </p>
+            </div>
+            <div class="card positive-block__card2">
+              <h5 class="card__title">Качество</h5>
+              <p class="card__desc">
+                "Скорость это важно, но ведь качество тоже не дожно страдать?"
+              </p>
+              <p class="card__desc">
+                Абсолютно!
+              </p>
+            </div>
+            <div class="card positive-block__card3">
+              <h5 class="card__title">Поддержка</h5>
+              <p class="card__desc">
+                "А если мне что-то не понравится?"
+              </p>
+              <p class="card__desc">
+                Обещаем, что обижаться не станем!
+              </p>
+              <p class="card__desc">
+                А еще исправим то, что не устроит Вас в течение трех дней после
+                завершения проекта.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="question">
+          <h2 className="question__title">
+            Зачем же тратить<br />
+            время? <br />доверьтесь нам!
+          </h2>
+        </div>
+        <button class="button question__button">Отправить заявку</button>
+      </section>
+
+      <include src="src/templates/tetris/tetris.html"></include>
+      <include src="src/templates/numbers/numbers.html"></include>
+      <include src="src/templates/commercials/offer.html"></include>
+      <include src="src/templates/stages/stages.html"></include>
+      <include src="src/templates/offer_button/offer_button.html"></include>
+      <include src="src/templates/comparison/comparison.html"></include>
+      <include src="src/templates/form-page/form-page.html"></include>
+    </main>
+    <include src="src/templates/footer.html"></include>
+    <include src="src/templates/modal.html"></include>
+  </body>
+</html>

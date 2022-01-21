@@ -1,0 +1,41 @@
+.comparison {
+  margin-bottom: 520px;
+  position: relative;
+  &__cocoen-wrapper {
+    background-image: url('../../img/comparison/comparison-bg-left.png'),
+      url('../../img/comparison/comparison-bg-right.png');
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+  }
+  &__cocoen {
+    padding: 20px 25px 20px 25px;
+    background-image: url('../../img/comparison/top.png'),
+      url('../../img/comparison/left.png'),
+      url('../../img/comparison/bottom.png'),
+      url('../../img/comparison/right.png');
+    background-position: top 0.4% right 5%, left center, bottom 0.5% left 61%,
+      right 1% bottom 53%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 70%;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      background: url(../../img/comparison/keyboard.png) no-repeat center;
+      left: -19%;
+      right: -15%;
+      height: 50%;
+      top: calc(100% - 46px);
+      background-size: cover;
+    }
+  }
+  @media (max-width: 767px) {
+    &__cocoen {
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

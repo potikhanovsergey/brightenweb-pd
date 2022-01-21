@@ -1,0 +1,18 @@
+.title-underline {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: -2;
+  width: 724px;
+  height: 60px;
+  @media (max-width: 767px) {
+    width: 160px;
+    height: 17px;
+    left: 0;
+    top: 10px;
+    svg {
+      width: 160px;
+      height: 17px;
+    }
+  }
+}

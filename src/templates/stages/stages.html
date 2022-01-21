@@ -1,0 +1,12 @@
+<section class="stages">
+  <div class="container stages-container">
+    <include src="src/templates/title/stages-title.html"></include>
+    <div class="stages__content">
+      <include src="src/templates/stages/components/navigation.html"></include>
+      <include
+        src="src/templates/stages/components/stages-block.html"
+        locals='{"stages": [1, 2, 3, 4, 5, 6, 7]}'
+      ></include>
+    </div>
+  </div>
+</section>
