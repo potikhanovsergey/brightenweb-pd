@@ -17,6 +17,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    & svg {
+      @media (max-width: 550px) {
+        width: 145px;
+      }
+    }
   }
 }
 
@@ -42,6 +47,10 @@ body {
     margin-bottom: 100px;
     line-height: 136.66px;
     text-align: center;
+    @media (max-width: 767px) {
+      font-size: 84px;
+      line-height: 94.9%;
+    }
   }
 }
 
@@ -106,9 +115,21 @@ body {
   padding: 50px 70px 20px 70px;
   color: white;
   font-family: 'Montserrat';
+  @media (max-width: 1040px) {
+    min-height: 400px;
+  }
+  @media (max-width: 450px) {
+    padding-right: 30px;
+    padding-left: 30px;
+    min-height: 160px;
+  }
   &__desc {
     font-weight: 400;
     font-size: 24px;
+    @media (max-width: 450px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__title {
@@ -116,6 +137,9 @@ body {
     font-weight: 700;
     text-align: center;
     font-size: 36px;
+    @media (max-width: 450px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -123,6 +147,9 @@ body {
   padding-top: 150px;
   &__title {
     margin-bottom: 100px;
+    @media (max-width: 1040px) {
+      text-align: center;
+    }
     &::before {
       background-image: url('../img/back-positive.svg');
     }
@@ -131,7 +158,13 @@ body {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    @media (max-width: 1040px) {
+      flex-direction: column;
+      gap: 50px;
+      padding: 0px 35px;
+    }
   }
+
   &__card1 {
     background-image: url('../img/card.png');
   }
@@ -173,6 +206,9 @@ body {
     &:hover {
       background-color: #c59739;
     }
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
   }
   background: url('../img/question-background.svg') center no-repeat;
   background-size: contain;
@@ -189,6 +225,13 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 60px;
+    }
+    @media (max-width: 500px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 }
 

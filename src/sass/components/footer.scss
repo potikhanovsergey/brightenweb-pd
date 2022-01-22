@@ -42,6 +42,10 @@
 
     text-transform: uppercase;
   }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .tel {
@@ -52,5 +56,15 @@
 .mail {
   &::before {
     background-image: url('../../img/mail.svg');
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    &__logo-link {
+      & svg {
+        width: 100%;
+      }
+    }
   }
 }

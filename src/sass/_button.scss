@@ -20,4 +20,8 @@
       border: 1px solid #e22163;
     }
   }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 5px 18px;
+  }
 }
