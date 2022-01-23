@@ -1,8 +1,30 @@
 <div class="stages-block">
-  <each loop="item, index in stages">
     <include
       src="src/templates/stages/components/stage.html"
-      locals='{"number": {{item}}}'
+      locals='{"number": 1, "title": "Консультация", "text": "Суть консультации состоит в том, чтобы вы смогли доходчиво донести до нас свою идею – что вас не устраивает в нынешнем виде сайта и какие изменения, на ваш взгляд, помогут это изменить. В случае если вы не можете сформулировать, что именно вас не устраивает, на консультации мы постараемся вместе с вами."}'
     ></include>
-  </each>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 2, "title": "ТЗ", "text": "Когда основные идеи и проблемы сформулированы, вы предоставляете нам ТЗ. Техническое задание – это подробное описание того, какой результат клиент хочет получить по итогу работы команды разработчиков."}'
+    ></include>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 3, "title": "Прототип", "text": "Если вы считаете, что, помимо дизайна, требуется переоформить саму структуру сайта, то нам не обойтись без создания прототипа: это схематичное представление измененной структуры вашего будущего сайта."}'
+    ></include>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 4, "title": "Дизайн", "text": "Дизайн – одно из основных направлений разработки. Следует потратить немало времени, чтобы обдумать каждый блок, кнопку и то, как они будут связаны. Мы не станем грузить вас сложными определениями и постараемся доходчиво объяснить, какие решения помогут вам при изменении дизайна."}'
+    ></include>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 5, "title": "Front-end", "text": "text"}'
+    ></include>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 6, "title": "Back-end", "text": "text"}'
+    ></include>
+    <include
+      src="src/templates/stages/components/stage.html"
+      locals='{"number": 7, "title": "Релиз", "text": "И последний этап – релиз. Но не последний этап нашей работы! В течение трех дней после релиза сайта вы еще можете отправлять заявки на правку тех сегментов, которые вам покажутся неудавшимися."}'
+    ></include>
 </div>

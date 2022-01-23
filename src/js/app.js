@@ -32,7 +32,7 @@ mainTitle.append(canvas);
 
 bsBackground.draw();
 
-$('#modal-link').animatedModal({
+$('.modal-link').animatedModal({
   animatedIn: 'fadeIn',
   animatedOut: 'fadeOut',
   color: '#111111',
