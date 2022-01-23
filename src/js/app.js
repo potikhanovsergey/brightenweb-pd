@@ -5,8 +5,8 @@ var optionsBackground, bsBackground;
 
 optionsBackground = {
   points: 10,
-  inkAmount: 20,
-  size: 300,
+  inkAmount: 35,
+  size: 400,
   frames: 10,
   frameAnimation: true,
   splashing: false,
@@ -16,7 +16,7 @@ optionsBackground = {
   padding: 11,
   stretch: true,
   overlap: 100,
-  frames: 100,
+  frames: 60,
   frameAnimation: true,
   width: width,
   height: height,

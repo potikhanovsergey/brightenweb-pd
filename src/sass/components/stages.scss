@@ -11,7 +11,7 @@
   //background-position-y: -120px;
   align-items: flex-end;
   &__title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     margin-right: 180px;
     font-weight: bold;
@@ -25,7 +25,7 @@
   }
   &__desc {
     margin-left: auto;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -41,7 +41,9 @@
   }
 }
 .stage {
-  margin-bottom: 93px;
+  &:not(:last-child) {
+    margin-bottom: 93px;
+  }
   @media (max-width: 1040px) {
     width: 100%;
   }
@@ -121,8 +123,7 @@
 
 .stage-navigation {
   position: sticky;
-  top: 10%;
-
+  top: 15%;
   list-style: none;
   &__link {
     margin-top: 30px;
@@ -130,7 +131,6 @@
     transition: 0.6s ease all;
     margin-left: -46px;
     z-index: 3;
-    &.m-active,
     &:hover {
       padding-left: 46px;
       .stage-navigation__a {
@@ -154,7 +154,7 @@
     fill: transparent;
   }
   &__a {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;

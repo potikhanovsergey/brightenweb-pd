@@ -18,9 +18,9 @@
   &__btn {
     background-color: white;
     color: #5598be;
-    margin: 93px auto;
+    margin: 93px auto 0;
     display: block;
-    width: 294px;
+    max-width: 294px;
     &:hover {
       background-color: #35769a;
       color: #fff;
@@ -29,6 +29,7 @@
   }
   &__form {
     margin-top: 55px;
+    padding-bottom: 30px;
     & input {
       display: block;
       width: 100%;

@@ -33,4 +33,10 @@
       padding: 58px 50px 58px 65px;
     }
   }
+  @media (max-width: 767px) {
+    &__item,
+    &__item.m-big {
+      padding: 58px 20px;
+    }
+  }
 }
