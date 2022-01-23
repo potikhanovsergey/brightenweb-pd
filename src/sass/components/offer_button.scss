@@ -1,18 +1,33 @@
 .offer-button {
-  background: round;
+  background: no-repeat center;
+  background-size: 100% 100%;
   background-image: url('../../img/offer-button/offer-bg.png');
   padding-top: 200px;
   margin-top: 122px;
   padding-bottom: 400px;
   margin-bottom: 200px;
+  @media (max-width: 767px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  & h2 {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
   &__desc {
     margin-bottom: 100px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
     max-width: 500px;
+    @media (max-width: 450px) {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 50px;
+    }
   }
   &__btn {
     color: #c378c9;
@@ -40,5 +55,9 @@
   }
   &__btn {
     align-self: center;
+  }
+  & img {
+    width: 100%;
+    height: auto;
   }
 }

@@ -5,10 +5,19 @@
 @import '_responsive';
 @import '_button.scss';
 
+html {
+  @media (max-width: 1023px) {
+    overflow-x: hidden !important;
+  }
+}
+
 body {
   background-color: $black;
   color: $white;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width: 1023px) {
+    overflow-x: hidden !important;
+  }
 }
 
 .header {
@@ -17,10 +26,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 100;
+    @media (max-width: 550px) {
+      justify-content: center;
+      svg {
+        width: 145px;
+      }
+    }
   }
 }
 
 .main-title {
+  user-select: none;
   padding-top: 40px;
   height: 750px;
   display: flex;
@@ -34,6 +54,7 @@ body {
   background-size: cover;
   &__title {
     font-family: 'GUERRILLA';
+    font-weight: 400;
     font-size: 144px;
     position: relative;
     z-index: 10;
@@ -42,17 +63,15 @@ body {
     margin-bottom: 100px;
     line-height: 136.66px;
     text-align: center;
+    @media (max-width: 767px) {
+      font-size: 84px;
+      line-height: 94.9%;
+    }
   }
 }
 
 .main-canvas {
   margin-top: 40px;
-}
-
-.logo {
-  font-family: 'GUERRILLA';
-  font-size: 36px;
-  color: $blue;
 }
 
 .container {
@@ -63,18 +82,6 @@ body {
 
 .title-section {
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: -50px;
-    z-index: 0;
-    width: 724px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
   & h2 {
     font-weight: 800;
     font-size: 96px;
@@ -91,6 +98,9 @@ body {
     @media (max-width: 767px) {
       font-size: 32px;
       line-height: 39px;
+      text-align: left;
+      margin: 0 auto;
+      display: inline-block;
     }
   }
 }
@@ -106,16 +116,30 @@ body {
   padding: 50px 70px 20px 70px;
   color: white;
   font-family: 'Montserrat';
+  @media (max-width: 1040px) {
+    min-height: 400px;
+  }
+  @media (max-width: 450px) {
+    padding-right: 30px;
+    padding-left: 30px;
+    min-height: 160px;
+  }
   &__desc {
     font-weight: 400;
     font-size: 24px;
+    @media (max-width: 450px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__title {
-    //margin-bottom: 60px;
     font-weight: 700;
     text-align: center;
     font-size: 36px;
+    @media (max-width: 450px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -123,6 +147,9 @@ body {
   padding-top: 150px;
   &__title {
     margin-bottom: 100px;
+    @media (max-width: 1040px) {
+      text-align: left;
+    }
     &::before {
       background-image: url('../img/back-positive.svg');
     }
@@ -131,7 +158,13 @@ body {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    @media (max-width: 1040px) {
+      flex-direction: column;
+      gap: 50px;
+      padding: 0px 35px;
+    }
   }
+
   &__card1 {
     background-image: url('../img/card.png');
   }
@@ -173,6 +206,9 @@ body {
     &:hover {
       background-color: #c59739;
     }
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
   }
   background: url('../img/question-background.svg') center no-repeat;
   background-size: contain;
@@ -181,14 +217,19 @@ body {
   align-items: center;
   position: relative;
   & h2 {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 800;
     font-size: 96px;
     line-height: 117px;
     text-align: center;
     color: white;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 60px;
+    }
+    @media (max-width: 500px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 }
 

@@ -32,10 +32,6 @@
     }
   }
   @media (max-width: 767px) {
-    &__cocoen {
-      &:after {
-        content: none;
-      }
-    }
+    display: none;
   }
 }

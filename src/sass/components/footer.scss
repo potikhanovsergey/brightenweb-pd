@@ -6,7 +6,7 @@
   padding-bottom: 40px;
   gap: 110px;
   &__contact {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -29,11 +29,8 @@
     display: block;
     margin-bottom: 20px;
   }
-  &__social-link {
-    margin-right: 36px;
-  }
   &__title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -41,6 +38,17 @@
     /* identical to box height, or 23px */
 
     text-transform: uppercase;
+  }
+  &__links {
+    display: flex;
+    gap: 36px;
+  }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    align-items: center;
+    &__links {
+      justify-content: center;
+    }
   }
 }
 
@@ -52,5 +60,15 @@
 .mail {
   &::before {
     background-image: url('../../img/mail.svg');
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    &__logo-link {
+      & svg {
+        width: 100%;
+      }
+    }
   }
 }

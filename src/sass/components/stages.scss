@@ -1,16 +1,17 @@
 .stage-content {
   //padding: 266px 0px;
   background: no-repeat left top;
+  background-size: auto 100%;
   width: 680px;
   min-height: 400px;
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
 
-  background-position-y: -120px;
+  //background-position-y: -120px;
   align-items: flex-end;
   &__title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     margin-right: 180px;
     font-weight: bold;
@@ -24,7 +25,7 @@
   }
   &__desc {
     margin-left: auto;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -34,15 +35,28 @@
     margin-left: 30px;
     width: 445px;
   }
+  @media (max-width: 1040px) {
+    width: 100%;
+    align-items: center;
+  }
 }
 .stage {
-  margin-bottom: 93px;
+  &:not(:last-child) {
+    margin-bottom: 93px;
+  }
+  @media (max-width: 1040px) {
+    width: 100%;
+  }
 }
 .stages {
   &__content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media (max-width: 1040px) {
+      width: 100%;
+      display: block;
+    }
   }
 }
 
@@ -74,10 +88,42 @@
   background-image: url('../../img/stages/number7.png');
 }
 
+@media (max-width: 1040px) {
+  .stage:nth-child(even) {
+    & .stage-content {
+      background-position: right;
+    }
+  }
+  .stage-content {
+    &__title {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__desc {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .stage-content {
+    min-height: 0;
+    &__title {
+      font-size: 18px;
+    }
+    &__desc {
+      font-weight: 300;
+      max-width: 250px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
 .stage-navigation {
   position: sticky;
-  top: 10%;
-
+  top: 15%;
   list-style: none;
   &__link {
     margin-top: 30px;
@@ -85,7 +131,6 @@
     transition: 0.6s ease all;
     margin-left: -46px;
     z-index: 3;
-    &.m-active,
     &:hover {
       padding-left: 46px;
       .stage-navigation__a {
@@ -109,7 +154,7 @@
     fill: transparent;
   }
   &__a {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -120,5 +165,8 @@
       color: #fec859;
       text-decoration: none;
     }
+  }
+  @media (max-width: 1040px) {
+    display: none;
   }
 }
